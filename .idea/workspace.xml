@@ -5,33 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/final-winnerit-project-MiriamBarNoy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_requests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api_requests/users_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/cart_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/checkout_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/inventory_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/api/register_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/api/tests_resources_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/api/tests_users_api.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_e2e.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ui/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,18 +24,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for tests_reqres.test_get_users.executor": "Run",
-    "Python tests.Python tests for tests_reqres.test_get_users_list.executor": "Run",
-    "Python tests.Python tests for tests_reqres.test_get_users_not_found.executor": "Run",
-    "Python tests.Python tests for tests_users_api.test_get_users_list.executor": "Run",
-    "Python tests.Python tests for tests_users_api.test_get_users_not_found.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/user/Documents/PythonCourse/final-winnerit-project-MiriamBarNoy"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for tests_reqres.test_get_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_reqres.test_get_users_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_reqres.test_get_users_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_users_api.test_get_users_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_users_api.test_get_users_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/PythonCourse/final-winnerit-project-MiriamBarNoy&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\PythonCourse\final-winnerit-project-MiriamBarNoy\tests\api" />
