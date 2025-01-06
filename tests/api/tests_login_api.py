@@ -25,7 +25,6 @@ login_errors = [
 #This will test 2 unsuccessful login cases with correct error message
 @pytest.mark.parametrize("email,password,code_reason",login_errors)
 def test_unsuccessful_registration(email,password,code_reason, login_end_point):
-    response = requests.get(f'{login_end_point}/')
     registration = {"email": email, "password": password}
     response = requests.post(f'{login_end_point}/', json=registration)
     json_data = response.json()

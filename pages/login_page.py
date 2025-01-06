@@ -7,7 +7,7 @@ class LoginPage:
         self.user_field = self.page.locator("[data-test=\"username\"]")
         self.password_field = self.page.locator("[data-test=\"password\"]")
         self.submit_btn = self.page.locator("[data-test=\"login-button\"]")
-        self.error_msg = self.page.locator("[data-test=\"error\"]")
+        self.error = self.page.locator("[data-test=\"error\"]")
 
 #Login action
     def login(self, username, password):
@@ -17,4 +17,4 @@ class LoginPage:
 
 #retreive error login message
     def get_error_message(self):
-        return self.error_msg.inner_text()
+        return self.error
