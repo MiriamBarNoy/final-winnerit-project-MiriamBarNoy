@@ -8,6 +8,7 @@ from faker import Faker
 def register_end_point(base_url_api):
     return f'{base_url_api}/register'
 
+#This will test successful registration with correct response code and json
 def test_successful_registration(register_end_point):
     email = 'eve.holt@reqres.in'
     password = 'pistol'

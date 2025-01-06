@@ -3,11 +3,12 @@ import pytest
 from tests.conftest import base_url_api
 from faker import Faker
 
-#this will define the resource end point
+#this will define the login end point
 @pytest.fixture()
 def login_end_point(base_url_api):
     return f'{base_url_api}/login'
 
+#This will test successful login
 def test_successful_login(login_end_point):
     email = 'eve.holt@reqres.in'
     password = 'cityslicka'

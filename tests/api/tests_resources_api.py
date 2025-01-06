@@ -30,12 +30,14 @@ def test_get_specific_resource(resource_id,field,value,resource_end_point):
             '.'):  # this will split the field string to a list of keys,e.g: "data.email", =['data', 'email']
         actual_value = actual_value.get(key, None)
         assert actual_value == value
+
+#this will test getting resource list
 def test_get_resource_list(resource_end_point):
     response = requests.get(resource_end_point)
     assert response.status_code == 200  # this asserts correct response
     json_data = response.json()
     num_of_entries = int(json_data.get("per_page", {}))
-    assert_that(json_data).is_length(num_of_entries)  # this assert number of entries per page as expected
+    assert_that(json_data).is_length(num_of_entries)  # this asserts number of entries per page as expected
     first_resource = requests.get(f'{resource_end_point}/1').json().get("data", {})
     second_resource = requests.get(f'{resource_end_point}/2').json().get("data", {})
     first_entry = json_data["data"][0]
@@ -44,7 +46,7 @@ def test_get_resource_list(resource_end_point):
     assert first_entry == first_resource
     assert second_entry == second_resource
 
-
+#this will test resource not found
 def test_resource_not_found(resource_end_point):
     response = requests.get(f'{resource_end_point}/999')
     assert response.status_code == 404

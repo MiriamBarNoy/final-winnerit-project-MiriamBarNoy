@@ -52,7 +52,7 @@ def test_get_users_list(users_end_point):
 #This asserts data
     assert first_entry == first_user_json
     assert second_entry == second_user_json
-
+#this will test creating new user
 def test_post_new_users(users_end_point):
      name = Faker().name() #This will create a fake user to use on creation
      email = Faker().email() #This will create a fake email to use on creation
@@ -66,6 +66,7 @@ def test_post_new_users(users_end_point):
      assert response.json()['email'] == email
      assert response.json()['job'] == job
 
+#this will test updating user
 def test_put_users(users_end_point):
     name = Faker().name()
     email = Faker().email()
@@ -77,17 +78,12 @@ def test_put_users(users_end_point):
     assert response.json()['name'] == name
     assert response.json()['email'] == email
 
+#this will test user deletion
 def test_delete_users(users_end_point):
     response = requests.delete(f'{users_end_point}/2')
     assert response.status_code == 204
     assert response.reason.upper() == "NO CONTENT"
 
-
-def test_registration():
-    pass
-
-def test_login():
-    pass
 
 
 
