@@ -30,11 +30,11 @@ jobs:
     - name: Playwright Install
       run: python -m playwright install --with-deps
 
-    - name: Run Tests Api
-      run: pytest -v --screenshot=on -m "api"
-
     - name: Run Tests UI
       run: pytest -v --screenshot=on -m "ui"
+
+    - name: Run Tests API
+      run: pytest -v --screenshot=on -m "api"
 
 
     - uses: actions/upload-artifact@v3
