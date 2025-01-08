@@ -13,6 +13,7 @@ from pages.end_page import EndPage
 from pages.summary_page import SummaryPage
 
 #this will test sanity E2E
+@pytest.mark.ui
 def test_sanity_e2e_flow(setup_browser,base_url_ui):
     this_page = setup_browser
     login_page = LoginPage(this_page)
@@ -79,6 +80,7 @@ def test_sanity_e2e_flow(setup_browser,base_url_ui):
     assert this_page.url == f'{base_url_ui}inventory.html'
 
 #this will test remove item E2E
+@pytest.mark.ui
 def test_remove_item_e2e_flow(setup_browser,base_url_ui):
     this_page = setup_browser
     login_page = LoginPage(this_page)

@@ -9,6 +9,7 @@ def register_end_point(base_url_api):
     return f'{base_url_api}/register'
 
 #This will test successful registration with correct response code and json
+@pytest.mark.api
 def test_successful_registration(register_end_point):
     email = 'eve.holt@reqres.in'
     password = 'pistol'
@@ -25,6 +26,7 @@ registration_errors = [
               ]
 #This will test 2 unsuccessful registration cases with correct error message
 @pytest.mark.parametrize("email,password,code_reason",registration_errors)
+@pytest.mark.api
 def test_unsuccessful_registration(email,password,code_reason, register_end_point):
     response = requests.get(f'{register_end_point}/')
     registration = {"email": email, "password": password}

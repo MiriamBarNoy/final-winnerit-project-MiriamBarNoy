@@ -4,17 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="">
+    <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="fix tests name to test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api/test_login_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_login_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api/test_register_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_register_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api/test_resources_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_resources_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/api/test_users_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_users_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/test_e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_e2e.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="FILTER_BY_ACTION_IN_POPUP" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MiriamBarNoy/final-winnerit-project-MiriamBarNoy&quot;,
+    &quot;accountId&quot;: &quot;16fa4c2f-f415-45f8-9c08-37f39ad4a268&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -26,14 +51,32 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for inventory_page.test_product_page.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for register_api.test_successful_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for register_api.test_unsuccessful_registration.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_e2e.test_remove_item_e2e_flow.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_e2e.test_sanity_e2e_flow.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.test_successful_logins.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_login.test_unsuccessful_logins.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_login_api.test_successful_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_login_api.test_unsuccessful_registration.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests_reqres.test_get_users.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests_reqres.test_get_users_list.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests_reqres.test_get_users_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_resources_api.test_get_resource_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_resources_api.test_get_specific_resource.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_resources_api.test_resource_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_users_api.test_delete_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_users_api.test_get_users.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests_users_api.test_get_users_list.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests_users_api.test_get_users_not_found.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_users_api.test_post_new_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests_users_api.test_put_users.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in inventory_page.py.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/PythonCourse/final-winnerit-project-MiriamBarNoy&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/PythonCourse/python_playwright&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -42,7 +85,7 @@
       <recent name="C:\Users\user\Documents\PythonCourse\final-winnerit-project-MiriamBarNoy\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests_users_api.test_get_users_list">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="final-winnerit-project-MiriamBarNoy" />
       <option name="ENV_FILES" value="" />
@@ -65,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.api.tests_users_api.test_get_users" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.api.test_login_api.test_unsuccessful_registration" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="final-winnerit-project-MiriamBarNoy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,77 +119,77 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.api.tests_users_api.test_get_users&quot;" />
+      <option name="_new_target" value="&quot;tests.api.test_login_api.test_unsuccessful_registration&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.api.tests_users_api.test_get_users_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.ui.test_e2e.test_remove_item_e2e_flow" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="final-winnerit-project-MiriamBarNoy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/ui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.api.tests_users_api.test_get_users_list&quot;" />
+      <option name="_new_target" value="&quot;tests.ui.test_e2e.test_remove_item_e2e_flow&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.api.tests_users_api.test_get_users_not_found" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.ui.test_e2e.test_sanity_e2e_flow" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="final-winnerit-project-MiriamBarNoy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/ui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.api.tests_users_api.test_get_users_not_found&quot;" />
+      <option name="_new_target" value="&quot;tests.ui.test_e2e.test_sanity_e2e_flow&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests_users_api.test_get_users_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.ui.test_login.test_successful_logins" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="final-winnerit-project-MiriamBarNoy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/ui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests_users_api.test_get_users_list&quot;" />
+      <option name="_new_target" value="&quot;tests.ui.test_login.test_successful_logins&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests_users_api.test_get_users_not_found" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.ui.test_login.test_unsuccessful_logins" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="final-winnerit-project-MiriamBarNoy" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/api" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/ui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests_users_api.test_get_users_not_found&quot;" />
+      <option name="_new_target" value="&quot;tests.ui.test_login.test_unsuccessful_logins&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests_users_api.test_get_users_list" />
-        <item itemvalue="Python tests.Python tests for tests_users_api.test_get_users_not_found" />
-        <item itemvalue="Python tests.Python tests for tests.api.tests_users_api.test_get_users" />
-        <item itemvalue="Python tests.Python tests for tests.api.tests_users_api.test_get_users_not_found" />
-        <item itemvalue="Python tests.Python tests for tests.api.tests_users_api.test_get_users_list" />
+        <item itemvalue="Python tests.Python tests for tests.ui.test_e2e.test_remove_item_e2e_flow" />
+        <item itemvalue="Python tests.Python tests for tests.ui.test_e2e.test_sanity_e2e_flow" />
+        <item itemvalue="Python tests.Python tests for tests.ui.test_login.test_unsuccessful_logins" />
+        <item itemvalue="Python tests.Python tests for tests.ui.test_login.test_successful_logins" />
+        <item itemvalue="Python tests.Python tests for tests.api.test_login_api.test_unsuccessful_registration" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +209,72 @@
       <option name="presentableId" value="Default" />
       <updated>1734947752844</updated>
     </task>
+    <task id="LOCAL‎-00001" summary="Add API tests">
+      <option name="closed" value="true" />
+      <created>1735858100594</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735858100595</updated>
+    </task>
+    <task id="LOCAL‎-00002" summary="Add API login tests">
+      <option name="closed" value="true" />
+      <created>1735859992499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL‎-00002" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1735859992499</updated>
+    </task>
+    <task id="LOCAL‎-00003" summary="Add pages">
+      <option name="closed" value="true" />
+      <created>1736152387282</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1736152387282</updated>
+    </task>
+    <task id="LOCAL‎-00004" summary="Add pages">
+      <option name="closed" value="true" />
+      <created>1736195356770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1736195356770</updated>
+    </task>
+    <task id="LOCAL‎-00005" summary="Add login tests">
+      <option name="closed" value="true" />
+      <created>1736201602600</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1736201602600</updated>
+    </task>
+    <task id="LOCAL‎-00006" summary="Add login tests">
+      <option name="closed" value="true" />
+      <created>1736332380592</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1736332380592</updated>
+    </task>
+    <task id="LOCAL‎-00007" summary="fix tests name to test">
+      <option name="closed" value="true" />
+      <created>1736333712147</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL‎-00007" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1736333712147</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add API tests" />
+    <MESSAGE value="Add API login tests" />
+    <MESSAGE value="Add pages" />
+    <MESSAGE value="Add login tests" />
+    <MESSAGE value="fix tests name to test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests name to test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -175,6 +283,11 @@
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/api/test_login_api.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

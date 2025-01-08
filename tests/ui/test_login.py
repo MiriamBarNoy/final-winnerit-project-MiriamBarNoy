@@ -23,6 +23,7 @@ login_error_data = [
     ('error_user','not_correct','Epic sadface: Username and password do not match any user in this service'),
               ]
 #successfull login tests that are transferred to next page
+@pytest.mark.ui
 @pytest.mark.parametrize("email,password",login_success_data)
 def test_successful_logins(email,password,setup_browser,base_url_ui):
     this_page = setup_browser
@@ -31,6 +32,7 @@ def test_successful_logins(email,password,setup_browser,base_url_ui):
     assert this_page.url == f'{base_url_ui}inventory.html'
 
 #unsuccsesful login attempts with correct error message
+@pytest.mark.ui
 @pytest.mark.parametrize("email,password,error",login_error_data)
 def test_unsuccessful_logins(email,password,error,setup_browser):
     this_page = setup_browser

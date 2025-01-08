@@ -9,6 +9,7 @@ def login_end_point(base_url_api):
     return f'{base_url_api}/login'
 
 #This will test successful login
+@pytest.mark.api
 def test_successful_login(login_end_point):
     email = 'eve.holt@reqres.in'
     password = 'cityslicka'
@@ -24,6 +25,7 @@ login_errors = [
               ]
 #This will test 2 unsuccessful login cases with correct error message
 @pytest.mark.parametrize("email,password,code_reason",login_errors)
+@pytest.mark.api
 def test_unsuccessful_registration(email,password,code_reason, login_end_point):
     registration = {"email": email, "password": password}
     response = requests.post(f'{login_end_point}/', json=registration)

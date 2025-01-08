@@ -20,6 +20,7 @@ users_data = [
 
 #this will test that response code & data are as expected testing sample fields per few users
 #2 tests will fail
+@pytest.mark.api
 @pytest.mark.parametrize("user_id,field,value",users_data)
 def test_get_users(user_id,field,value, users_end_point):
     response = requests.get(f'{users_end_point}/{user_id}')
@@ -32,6 +33,7 @@ def test_get_users(user_id,field,value, users_end_point):
         assert actual_value == value
 
 #this will test that if user not found - correct response code is received with no crash
+@pytest.mark.api
 def test_get_users_not_found(users_end_point):
     response = requests.get(f'{users_end_point}/999')
     assert response.status_code == 404
@@ -39,6 +41,7 @@ def test_get_users_not_found(users_end_point):
     assert_that(response.json()).is_empty()
 
 #this will test getting user list
+@pytest.mark.api
 def test_get_users_list(users_end_point):
     response = requests.get(users_end_point)
     assert response.status_code == 200 # this asserts correct responce
@@ -53,6 +56,7 @@ def test_get_users_list(users_end_point):
     assert first_entry == first_user_json
     assert second_entry == second_user_json
 #this will test creating new user
+@pytest.mark.api
 def test_post_new_users(users_end_point):
      name = Faker().name() #This will create a fake user to use on creation
      email = Faker().email() #This will create a fake email to use on creation
@@ -67,6 +71,7 @@ def test_post_new_users(users_end_point):
      assert response.json()['job'] == job
 
 #this will test updating user
+@pytest.mark.api
 def test_put_users(users_end_point):
     name = Faker().name()
     email = Faker().email()
@@ -79,6 +84,7 @@ def test_put_users(users_end_point):
     assert response.json()['email'] == email
 
 #this will test user deletion
+@pytest.mark.api
 def test_delete_users(users_end_point):
     response = requests.delete(f'{users_end_point}/2')
     assert response.status_code == 204

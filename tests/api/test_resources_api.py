@@ -19,6 +19,7 @@ resource_data = [
               ]
 #this will test that response code & data are as expected testing sample fields per few resources
 #2 tests will fail
+@pytest.mark.api
 @pytest.mark.parametrize("resource_id,field,value",resource_data)
 def test_get_specific_resource(resource_id,field,value,resource_end_point):
     response = requests.get(f'{resource_end_point}/{resource_id}')
@@ -32,6 +33,7 @@ def test_get_specific_resource(resource_id,field,value,resource_end_point):
         assert actual_value == value
 
 #this will test getting resource list
+@pytest.mark.api
 def test_get_resource_list(resource_end_point):
     response = requests.get(resource_end_point)
     assert response.status_code == 200  # this asserts correct response
@@ -47,6 +49,7 @@ def test_get_resource_list(resource_end_point):
     assert second_entry == second_resource
 
 #this will test resource not found
+@pytest.mark.api
 def test_resource_not_found(resource_end_point):
     response = requests.get(f'{resource_end_point}/999')
     assert response.status_code == 404
