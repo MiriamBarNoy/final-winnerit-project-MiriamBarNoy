@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-class LoginPage:
+class CheckOutPage:
 #This will map all locators on login page
     def __init__(self, page: Page):
         self.page = page
@@ -13,7 +13,7 @@ class LoginPage:
 
 
 #Fill form
-    def login(self, name, last_name,postal_code):
+    def fill_form(self, name, last_name,postal_code):
         self.name_field.fill(name)
         self.last_name_field.fill(last_name)
         self.postal_code_field.fill(postal_code)

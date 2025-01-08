@@ -41,15 +41,4 @@ class InventoryPage:
     def click_cart(self):
         self.page.locator("[data-test=\"shopping-cart-link\"]").click()
 
-# Example Usage
-# def test_product_page(page: Page):
-#     product_page = InventoryPage(page)
-#     page.goto("https://www.saucedemo.com/")
-#     login_page = LoginPage(page)
-#     login_page.login("standard_user", "secret_sauce")
-#     products = product_page.get_all_products()
-#     print(products)
-#     first_product = product_page.get_product(0)
-#     assert first_product["title"] == "Sauce Labs Backpack"
-#     product_page.add_to_cart(0)
-#     assert product_page.get_items_qty() == 1
+

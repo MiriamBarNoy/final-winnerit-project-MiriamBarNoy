@@ -1,11 +1,11 @@
-from time import sleep
 import pytest
 import re
 from playwright.sync_api import sync_playwright, Browser, expect
 from tests.conftest import base_url_ui
 from tests.conftest import setup_browser
-from faker import Faker
 from pages.login_page import LoginPage
+from faker import Faker
+
 
 #data sets for login tests
 fix_password = "secret_sauce"

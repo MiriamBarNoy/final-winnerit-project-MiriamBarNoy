@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-class CartPage:
+class SummaryPage:
     def __init__(self, page: Page):
         self.page = page
 
@@ -31,10 +31,6 @@ class CartPage:
 
     def get_payment_method(self):
         payment_method = self.page.locator("data-test=\"payment-info-value\"").inner_text()
-        return payment_method
-
-    def get_shipping_method(self):
-        payment_method = self.page.locator("data-test=\"shipping-info-value\"").inner_text()
         return payment_method
 
     def get_subtotal(self):
