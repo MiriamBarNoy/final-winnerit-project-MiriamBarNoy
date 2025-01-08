@@ -1,5 +1,3 @@
-from time import sleep
-
 import pytest
 from assertpy import assert_that
 from faker.contrib.pytest.plugin import faker
