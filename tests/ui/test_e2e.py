@@ -1,8 +1,5 @@
 import pytest
-from assertpy import assert_that
-from faker.contrib.pytest.plugin import faker
 from faker.proxy import Faker
-from playwright.sync_api import sync_playwright, Browser, expect
 from tests.conftest import base_url_ui
 from tests.conftest import setup_browser
 from pages.cart_page import CartPage
@@ -11,8 +8,11 @@ from pages.login_page import LoginPage
 from pages.checkout_page import CheckOutPage
 from pages.end_page import EndPage
 from pages.summary_page import SummaryPage
+import allure
 
 #this will test sanity E2E
+@allure.feature("E2E flow")
+@allure.story("full E2E sanity")
 @pytest.mark.ui
 def test_sanity_e2e_flow(setup_browser,base_url_ui):
     this_page = setup_browser
@@ -80,8 +80,11 @@ def test_sanity_e2e_flow(setup_browser,base_url_ui):
     assert this_page.url == f'{base_url_ui}inventory.html'
 
 #this will test remove item E2E
+@allure.feature("E2E flow")
+@allure.story("remove item from cart full flow")
 @pytest.mark.ui
 def test_remove_item_e2e_flow(setup_browser,base_url_ui):
+#setup
     this_page = setup_browser
     login_page = LoginPage(this_page)
     inventory_page = InventoryPage(this_page)

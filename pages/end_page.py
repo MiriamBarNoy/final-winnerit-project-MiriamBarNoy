@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page
 
 class EndPage:
@@ -10,11 +11,14 @@ class EndPage:
 
  #header retrieve
     def get_header(self):
-        return self.complete_header.inner_text()
+        with allure.step("get end page header:"):
+            return self.complete_header.inner_text()
 #message retrieve
     def get_text_msg(self):
-        return self.complete_text.inner_text()
+        with allure.step("get end page message:"):
+           return self.complete_text.inner_text()
 
  #go back action
     def go_back(self):
-        self.back_btn.click()
+        with allure.step("go back on end page:"):
+            self.back_btn.click()

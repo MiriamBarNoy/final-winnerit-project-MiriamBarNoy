@@ -1,3 +1,4 @@
+import allure
 import requests
 import pytest
 from assertpy import assert_that
@@ -7,7 +8,8 @@ from faker import Faker
 #this will define the users end point
 @pytest.fixture()
 def users_end_point(base_url_api):
-    return f'{base_url_api}/users'
+    with allure.step("navigate to users page:"):
+       return f'{base_url_api}/users'
 
 users_data = [
               (1,'email','george.bluth@reqres.in'),
@@ -20,6 +22,8 @@ users_data = [
 
 #this will test that response code & data are as expected testing sample fields per few users
 #2 tests will fail
+@allure.feature("API users tests")
+@allure.story("get user by ID")
 @pytest.mark.api
 @pytest.mark.parametrize("user_id,field,value",users_data)
 def test_get_users(user_id,field,value, users_end_point):
@@ -33,6 +37,8 @@ def test_get_users(user_id,field,value, users_end_point):
         assert actual_value == value
 
 #this will test that if user not found - correct response code is received with no crash
+@allure.feature("API users tests")
+@allure.story("user not found")
 @pytest.mark.api
 def test_get_users_not_found(users_end_point):
     response = requests.get(f'{users_end_point}/999')
@@ -42,6 +48,8 @@ def test_get_users_not_found(users_end_point):
 
 #this will test getting user list
 @pytest.mark.api
+@allure.feature("API users tests")
+@allure.story("get users list")
 def test_get_users_list(users_end_point):
     response = requests.get(users_end_point)
     assert response.status_code == 200 # this asserts correct responce
@@ -57,6 +65,8 @@ def test_get_users_list(users_end_point):
     assert second_entry == second_user_json
 #this will test creating new user
 @pytest.mark.api
+@allure.feature("API users tests")
+@allure.story("create user:")
 def test_post_new_users(users_end_point):
      name = Faker().name() #This will create a fake user to use on creation
      email = Faker().email() #This will create a fake email to use on creation
@@ -71,6 +81,8 @@ def test_post_new_users(users_end_point):
      assert response.json()['job'] == job
 
 #this will test updating user
+@allure.feature("API users tests")
+@allure.story("update user")
 @pytest.mark.api
 def test_put_users(users_end_point):
     name = Faker().name()
@@ -85,6 +97,8 @@ def test_put_users(users_end_point):
 
 #this will test user deletion
 @pytest.mark.api
+@allure.feature("API users tests")
+@allure.story("delete user")
 def test_delete_users(users_end_point):
     response = requests.delete(f'{users_end_point}/2')
     assert response.status_code == 204

@@ -1,3 +1,4 @@
+import allure
 import requests
 import pytest
 from tests.conftest import base_url_api
@@ -6,10 +7,13 @@ from faker import Faker
 #this will define the resource end point
 @pytest.fixture()
 def register_end_point(base_url_api):
-    return f'{base_url_api}/register'
+    with allure.step("navigate to registration page:"):
+       return f'{base_url_api}/register'
 
 #This will test successful registration with correct response code and json
 @pytest.mark.api
+@allure.feature("API register tests")
+@allure.story("successful registration")
 def test_successful_registration(register_end_point):
     email = 'eve.holt@reqres.in'
     password = 'pistol'
@@ -25,6 +29,8 @@ registration_errors = [
               ('eve.holt@reqres.in','','Missing password'),
               ]
 #This will test 2 unsuccessful registration cases with correct error message
+@allure.feature("API register tests")
+@allure.story("successful registration")
 @pytest.mark.parametrize("email,password,code_reason",registration_errors)
 @pytest.mark.api
 def test_unsuccessful_registration(email,password,code_reason, register_end_point):

@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page
 
 class CheckOutPage:
@@ -14,18 +15,22 @@ class CheckOutPage:
 
 #Fill form
     def fill_form(self, name, last_name,postal_code):
-        self.name_field.fill(name)
-        self.last_name_field.fill(last_name)
-        self.postal_code_field.fill(postal_code)
+        with allure.step("fill checkout form:"):
+            self.name_field.fill(name)
+            self.last_name_field.fill(last_name)
+            self.postal_code_field.fill(postal_code)
 
 #Submit action
     def submit(self):
-        self.submit_btn.click()
+        with allure.step("submit checkout form:"):
+           self.submit_btn.click()
 
 #cancel action
     def cancel(self):
-        self.cancel_btn.click()
+        with allure.step("cancel checkout form:"):
+           self.cancel_btn.click()
 
 #retreive error on form filling
     def get_error_message(self):
-        return self.error_msg.inner_text()
+        with allure.step("get error message upon form filling:"):
+            return self.error_msg.inner_text()
