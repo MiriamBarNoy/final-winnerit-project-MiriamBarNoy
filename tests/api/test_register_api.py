@@ -14,6 +14,7 @@ def register_end_point(base_url_api):
 @pytest.mark.api
 @allure.feature("API register tests")
 @allure.story("successful registration")
+@allure.title("successful registration including json validation")
 def test_successful_registration(register_end_point):
     email = 'eve.holt@reqres.in'
     password = 'pistol'

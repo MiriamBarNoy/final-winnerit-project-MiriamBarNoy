@@ -15,6 +15,7 @@ def login_end_point(base_url_api):
 @pytest.mark.api
 @allure.feature("API login tests")
 @allure.story("successful login")
+@allure.title("successful login")
 def test_successful_login(login_end_point):
     email = 'eve.holt@reqres.in'
     password = 'cityslicka'
@@ -31,6 +32,7 @@ login_errors = [
 #This will test 2 unsuccessful login cases with correct error message
 @allure.feature("API login tests")
 @allure.story("failure login")
+@allure.title("Login failures tests including relevant errors")
 @pytest.mark.parametrize("email,password,code_reason",login_errors)
 @pytest.mark.api
 def test_unsuccessful_login(email,password,code_reason, login_end_point):

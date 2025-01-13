@@ -67,6 +67,7 @@ def test_get_users_list(users_end_point):
 @pytest.mark.api
 @allure.feature("API users tests")
 @allure.story("create user:")
+@allure.title("user creation api test")
 def test_post_new_users(users_end_point):
      name = Faker().name() #This will create a fake user to use on creation
      email = Faker().email() #This will create a fake email to use on creation
@@ -83,6 +84,7 @@ def test_post_new_users(users_end_point):
 #this will test updating user
 @allure.feature("API users tests")
 @allure.story("update user")
+@allure.title("user update api test")
 @pytest.mark.api
 def test_put_users(users_end_point):
     name = Faker().name()
@@ -99,6 +101,7 @@ def test_put_users(users_end_point):
 @pytest.mark.api
 @allure.feature("API users tests")
 @allure.story("delete user")
+@allure.story("user deletion api test")
 def test_delete_users(users_end_point):
     response = requests.delete(f'{users_end_point}/2')
     assert response.status_code == 204

@@ -27,21 +27,26 @@ login_error_data = [
 #1 test will fail here to see it on report
 @allure.feature("Login")
 @allure.story("Happy flow")
+@allure.title("Success login from UI")
 @pytest.mark.ui
 @pytest.mark.parametrize("email,password",login_success_data)
 def test_successful_logins(email,password,setup_browser,base_url_ui):
     this_page = setup_browser
     login_page = LoginPage(this_page)
     login_page.login(email, password)
+    allure.attach(this_page.screenshot())
     assert this_page.url == f'{base_url_ui}inventory.html'
 
 #unsuccsesful login attempts with correct error message
 @allure.feature("Login")
 @allure.story("Negative flow")
+@allure.story("Unsurenesss loging including relevant error validation")
 @pytest.mark.ui
 @pytest.mark.parametrize("email,password,error",login_error_data)
 def test_unsuccessful_logins(email,password,error,setup_browser):
     this_page = setup_browser
     login_page = LoginPage(this_page)
     login_page.login(email, password)
+    allure.attach(this_page.screenshot())
     expect(login_page.error).to_contain_text(error)
+

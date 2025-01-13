@@ -25,6 +25,7 @@ resource_data = [
 @pytest.mark.parametrize("resource_id,field,value",resource_data)
 @allure.feature("API resource tests")
 @allure.story("get resource by ID")
+@allure.title("get resource by ID")
 def test_get_specific_resource(resource_id,field,value,resource_end_point):
     response = requests.get(f'{resource_end_point}/{resource_id}')
     assert response.status_code == 200
@@ -39,6 +40,7 @@ def test_get_specific_resource(resource_id,field,value,resource_end_point):
 #this will test getting resource list
 @allure.feature("API resource tests")
 @allure.story("get resource list")
+@allure.title("get resource list")
 @pytest.mark.api
 def test_get_resource_list(resource_end_point):
     response = requests.get(resource_end_point)
@@ -58,6 +60,7 @@ def test_get_resource_list(resource_end_point):
 @pytest.mark.api
 @allure.feature("API resource tests")
 @allure.story("resource not found")
+@allure.title("resource not found")
 def test_resource_not_found(resource_end_point):
     response = requests.get(f'{resource_end_point}/999')
     assert response.status_code == 404

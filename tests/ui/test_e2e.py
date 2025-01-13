@@ -14,6 +14,7 @@ import allure
 @allure.feature("E2E flow")
 @allure.story("full E2E sanity")
 @pytest.mark.ui
+@allure.title("E2E flow - purchase from UI test")
 def test_sanity_e2e_flow(setup_browser,base_url_ui):
     this_page = setup_browser
     login_page = LoginPage(this_page)
@@ -35,6 +36,7 @@ def test_sanity_e2e_flow(setup_browser,base_url_ui):
     second_item_price = inventory_page.get_product(5)["price"]
 #assert correct item quantity
     assert inventory_page.get_items_qty() == 2
+    allure.attach(this_page.screenshot())
     inventory_page.click_cart()
     assert this_page.url == f'{base_url_ui}cart.html'
 #assert correct items on cart
@@ -49,6 +51,7 @@ def test_sanity_e2e_flow(setup_browser,base_url_ui):
     assert second_item_desc == cart_second_item["description"]
     assert cart_second_item["item_quantity"] == 1
     assert cart_first_item["item_quantity"] == 1
+    allure.attach(this_page.screenshot())
 #checkout
     cart_page.checkout()
     assert this_page.url == f'{base_url_ui}checkout-step-one.html'
@@ -69,6 +72,7 @@ def test_sanity_e2e_flow(setup_browser,base_url_ui):
     assert subtotal == (summary_first_item["price"] + summary_second_item["price"])
     assert taxes == round((subtotal*0.08),2)
     assert total == round((subtotal + taxes),2)
+    allure.attach(this_page.screenshot())
 #finish
     summary_page.finish()
     assert this_page.url == f'{base_url_ui}checkout-complete.html'
@@ -78,10 +82,12 @@ def test_sanity_e2e_flow(setup_browser,base_url_ui):
     end_page.go_back()
 #assert that when finish we get back to inventory
     assert this_page.url == f'{base_url_ui}inventory.html'
+    allure.attach(this_page.screenshot())
 
 #this will test remove item E2E
 @allure.feature("E2E flow")
 @allure.story("remove item from cart full flow")
+@allure.title("remove item from cart full flow")
 @pytest.mark.ui
 def test_remove_item_e2e_flow(setup_browser,base_url_ui):
 #setup
@@ -100,12 +106,14 @@ def test_remove_item_e2e_flow(setup_browser,base_url_ui):
     inventory_page.add_to_cart(4)
 #assert correct item quantity
     assert inventory_page.get_items_qty() == 4
+    allure.attach(this_page.screenshot())
     inventory_page.click_cart()
 #remove to items & assert updated
     assert len(cart_page.get_all_cart_products()) == 4
     cart_page.remove_from_cart(0)
     cart_page.remove_from_cart(1)
     assert len(cart_page.get_all_cart_products()) == 2
+    allure.attach(this_page.screenshot())
 #checkout
     cart_page.checkout()
     assert this_page.url == f'{base_url_ui}checkout-step-one.html'
@@ -124,7 +132,9 @@ def test_remove_item_e2e_flow(setup_browser,base_url_ui):
     assert subtotal == (summary_first_item["price"] + summary_second_item["price"])
     assert taxes == round((subtotal*0.08),2)
     assert total == round((subtotal + taxes),2)
+    allure.attach(this_page.screenshot())
 #finish
     summary_page.finish()
+    allure.attach(this_page.screenshot())
     assert this_page.url == f'{base_url_ui}checkout-complete.html'
 
