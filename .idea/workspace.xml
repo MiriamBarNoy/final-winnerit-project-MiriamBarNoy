@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="add git actions">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/api/test_login_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_login_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/api/test_register_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_register_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/api/test_resources_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_resources_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/api/test_users_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api/test_users_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ui/test_e2e.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_e2e.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/ui/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_login.py" afterDir="false" />
-    </list>
+    <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="add allure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -295,7 +287,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1736681697353</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL‎-00012" summary="add allure">
+      <option name="closed" value="true" />
+      <created>1736757836175</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL‎-00012" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1736757836175</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -305,7 +305,8 @@
     <MESSAGE value="Add login tests" />
     <MESSAGE value="fix tests name to test" />
     <MESSAGE value="add git actions" />
-    <option name="LAST_COMMIT_MESSAGE" value="add git actions" />
+    <MESSAGE value="add allure" />
+    <option name="LAST_COMMIT_MESSAGE" value="add allure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
