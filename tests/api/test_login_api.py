@@ -15,7 +15,7 @@ def login_end_point(base_url_api):
 @pytest.mark.api
 @allure.feature("API login tests")
 @allure.story("successful login")
-@allure.title("successful login")
+@allure.title("successful login test")
 def test_successful_login(login_end_point):
     email = 'eve.holt@reqres.in'
     password = 'cityslicka'

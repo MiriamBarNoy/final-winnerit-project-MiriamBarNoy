@@ -23,15 +23,15 @@
     <option name="FILTER_BY_ACTION_IN_POPUP" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "author": "MiriamBarNoy"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;MiriamBarNoy&quot;
     }
   ],
-  "lastFilter": {}
-}]]></component>
+  &quot;lastFilter&quot;: {}
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/MiriamBarNoy/final-winnerit-project-MiriamBarNoy&quot;,
@@ -183,10 +183,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.ui.test_e2e.test_remove_item_e2e_flow" />
-        <item itemvalue="Python tests.Python tests for tests.ui.test_e2e.test_sanity_e2e_flow" />
         <item itemvalue="Python tests.Python tests for tests.ui.test_login.test_unsuccessful_logins" />
         <item itemvalue="Python tests.Python tests for tests.ui.test_login.test_successful_logins" />
+        <item itemvalue="Python tests.Python tests for tests.ui.test_e2e.test_sanity_e2e_flow" />
+        <item itemvalue="Python tests.Python tests for tests.ui.test_e2e.test_remove_item_e2e_flow" />
         <item itemvalue="Python tests.Python tests for tests.api.test_login_api.test_unsuccessful_registration" />
       </list>
     </recent_temporary>
