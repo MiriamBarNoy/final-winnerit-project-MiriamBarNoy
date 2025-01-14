@@ -1,5 +1,7 @@
 .idea/
 .venv/
 allure-results/
+tests/__pycache__/
+tests/api/__pycache__/
 
 
