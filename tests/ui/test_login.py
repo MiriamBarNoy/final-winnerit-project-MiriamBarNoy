@@ -40,7 +40,7 @@ def test_successful_logins(email,password,setup_browser,base_url_ui):
 #unsuccsesful login attempts with correct error message
 @allure.feature("Login")
 @allure.story("Negative flow")
-@allure.story("Unsurenesss loging including relevant error validation")
+@allure.title("Login failures including relevant error validation")
 @pytest.mark.ui
 @pytest.mark.parametrize("email,password,error",login_error_data)
 def test_unsuccessful_logins(email,password,error,setup_browser):

@@ -20,7 +20,7 @@ def base_url_ui():
 def setup_browser(base_url_ui):
     with allure.step("define browser setup for ui tests:"):
         with sync_playwright() as p:
-            browser: Browser = p.chromium.launch(channel="chrome")
+            browser: Browser = p.chromium.launch()
             page = browser.new_page()
             page.goto(base_url_ui)
             yield page

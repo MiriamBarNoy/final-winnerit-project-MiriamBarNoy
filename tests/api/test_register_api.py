@@ -31,7 +31,8 @@ registration_errors = [
               ]
 #This will test 2 unsuccessful registration cases with correct error message
 @allure.feature("API register tests")
-@allure.story("successful registration")
+@allure.story("Registration failures")
+@allure.title("Registration failures with relevant code reason on response")
 @pytest.mark.parametrize("email,password,code_reason",registration_errors)
 @pytest.mark.api
 def test_unsuccessful_registration(email,password,code_reason, register_end_point):

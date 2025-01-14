@@ -101,7 +101,7 @@ def test_put_users(users_end_point):
 @pytest.mark.api
 @allure.feature("API users tests")
 @allure.story("delete user")
-@allure.story("user deletion api test")
+@allure.title("user deletion api test")
 def test_delete_users(users_end_point):
     response = requests.delete(f'{users_end_point}/2')
     assert response.status_code == 204

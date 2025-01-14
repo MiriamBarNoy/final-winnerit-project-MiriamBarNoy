@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="add allure">
+    <list default="true" id="8bddb34a-fc5b-4cec-865b-539376045be5" name="Changes" comment="add test title">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ test.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ test.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ui/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ui/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,11 @@
   </component>
   <component name="Git.Settings">
     <option name="FILTER_BY_ACTION_IN_POPUP" value="false" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -47,36 +55,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for inventory_page.test_product_page.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for register_api.test_successful_registration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for register_api.test_unsuccessful_registration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_e2e.test_remove_item_e2e_flow.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_e2e.test_sanity_e2e_flow.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login.test_successful_logins.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login.test_unsuccessful_logins.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_login_api.test_successful_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_login_api.test_unsuccessful_registration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_reqres.test_get_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_reqres.test_get_users_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_reqres.test_get_users_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_resources_api.test_get_resource_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_resources_api.test_get_specific_resource.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_resources_api.test_resource_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_users_api.test_delete_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_users_api.test_get_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_users_api.test_get_users_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_users_api.test_get_users_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_users_api.test_post_new_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests_users_api.test_put_users.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in inventory_page.py.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Documents/PythonCourse/python_playwright&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Python tests.Python tests for inventory_page.test_product_page.executor": "Run",
+    "Python tests.Python tests for register_api.test_successful_registration.executor": "Run",
+    "Python tests.Python tests for register_api.test_unsuccessful_registration.executor": "Run",
+    "Python tests.Python tests for test_e2e.test_remove_item_e2e_flow.executor": "Run",
+    "Python tests.Python tests for test_e2e.test_sanity_e2e_flow.executor": "Run",
+    "Python tests.Python tests for test_login.test_successful_logins.executor": "Run",
+    "Python tests.Python tests for test_login.test_unsuccessful_logins.executor": "Run",
+    "Python tests.Python tests for tests_login_api.test_successful_login.executor": "Run",
+    "Python tests.Python tests for tests_login_api.test_unsuccessful_registration.executor": "Run",
+    "Python tests.Python tests for tests_reqres.test_get_users.executor": "Run",
+    "Python tests.Python tests for tests_reqres.test_get_users_list.executor": "Run",
+    "Python tests.Python tests for tests_reqres.test_get_users_not_found.executor": "Run",
+    "Python tests.Python tests for tests_resources_api.test_get_resource_list.executor": "Run",
+    "Python tests.Python tests for tests_resources_api.test_get_specific_resource.executor": "Run",
+    "Python tests.Python tests for tests_resources_api.test_resource_not_found.executor": "Run",
+    "Python tests.Python tests for tests_users_api.test_delete_users.executor": "Run",
+    "Python tests.Python tests for tests_users_api.test_get_users.executor": "Run",
+    "Python tests.Python tests for tests_users_api.test_get_users_list.executor": "Run",
+    "Python tests.Python tests for tests_users_api.test_get_users_not_found.executor": "Run",
+    "Python tests.Python tests for tests_users_api.test_post_new_users.executor": "Run",
+    "Python tests.Python tests for tests_users_api.test_put_users.executor": "Run",
+    "Python tests.Python tests in inventory_page.py.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/user/Documents/PythonCourse/python_playwright",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\user\Documents\PythonCourse\final-winnerit-project-MiriamBarNoy\tests\api" />
@@ -322,7 +331,8 @@
     <MESSAGE value="fix tests name to test" />
     <MESSAGE value="add git actions" />
     <MESSAGE value="add allure" />
-    <option name="LAST_COMMIT_MESSAGE" value="add allure" />
+    <MESSAGE value="add test title" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test title" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
